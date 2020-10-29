@@ -1,0 +1,594 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    box-sizing: border-box;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+#header{
+  background-color: #000;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.flex {
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.menu {
+  color: #fff;
+  margin-left: 30px;
+  list-style: none;
+}
+
+.menu-nav-list {
+  display: flex;
+}
+
+.menu-nav-list a {
+  text-decoration: none;
+}
+
+
+#eye-catch {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: url(../img/img/eyecatch.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.eye-catch-title {
+  padding-top: 400px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #fff;
+  font-size: 50px;
+  font-style: italic;
+}
+
+.news {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;  
+}
+
+.news-white {
+  background-color: #fff;
+  width: 80%;
+  height: 60px;
+}
+
+.news-black {
+  background-color: black;
+  color: #fff;
+  width: 20%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.date {
+  margin : 5px;
+  font-size: 12px;
+}
+
+.news-title {
+  font-size: 14px;
+  margin: 7px 15px 0;
+}
+
+#about {
+  color: #fff;
+  background-color: black;
+  height: 455px;
+  position: relative;
+}
+
+.about-img {
+  position: absolute;
+  top: 100px;
+  /* left: 825px; */
+  right: 5%;
+  width: 600px;
+  height: 400px;
+}
+
+.about-contents {
+  position: absolute;
+  top: 125px;  
+  left: 300px;
+  width: 750px;
+}
+
+.about-contents h2 {
+  font-size: 30px;
+}
+
+
+.about-contents h2,
+.about-contents p {
+  margin-bottom: 30px;
+}
+
+.about-btn {
+  width: 140px;
+  height: 35px;
+}
+
+
+#service {
+  background: #cdcdcd;
+  margin-bottom: 220px;
+  margin-top: 150px;
+}
+
+#service h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+
+.service-contents {
+  display: flex;
+}
+
+.service-img {
+  height: 500px;
+  width: 750px;
+}
+
+.service-text {
+  height: 300px;
+  width: 600px;
+  background-color: #fff;
+}
+
+.text {
+  margin: 80px;
+}
+
+.service-text p {
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-weight: 700;
+}
+
+.service-btn {
+  width: 140px;
+  height: 30px;
+  background: #fff;
+  border: solid 1px #000;
+  margin-left: 290px;
+}
+
+.contents1 {
+  position: relative;
+  margin-bottom: 220px;
+  justify-content: flex-end;
+}
+
+.text-1 {
+  position: absolute;
+  left: 300px;
+  top: 100px;
+}
+
+.contents2 {
+  position: relative;
+  padding-bottom: 220px;
+}
+
+.text-2 {
+  position: absolute;
+  left: 600px;
+  top: 100px;
+}
+
+
+.service-contents:nth-child(even) {
+  flex-direction: row;
+}
+
+#information {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #fff;
+}
+
+.info-contents {
+  position: relative;
+}
+
+.info-img {
+  width: 730px;
+  height: 250px;
+}
+
+.info-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  color: #fff;
+}
+
+.english-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.japanese-title {
+  font-size: 14px;
+}
+
+#FAQ {
+  width: 75%;
+  margin: 150px auto;
+  background-color: black;
+  color: #fff;
+  padding: 50px 40px;  
+}
+
+table {
+  width: 100%;
+}
+
+.faq-left {
+  text-align: left;
+  font-size: 25px;
+}
+
+.faq-center {
+  width: 54%;
+  font-size: 15px;
+}
+
+#contact {
+  background: url(../img/img/contact-bg.jpg);
+  background-size: cover;
+  height: 600px;
+}
+
+.contact-contents {
+  text-align: center;
+  color: #fff;
+  padding: 240px 0 140px;
+}
+
+.message {
+  margin: 30px 0;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.sub-message {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.contact-btn {
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: #fff 1px solid;
+  color: #fff;
+}
+
+.footer-menu {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  padding: 0 20px;
+}
+
+.copy {
+  color: #fff;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+/* #hamburger {
+  display: none;
+} */
+
+@media screen and (max-width: 480px) {
+  
+  #hamburger {
+    width: 40px;
+    position: absolute;
+    top: 8px;
+    right: 20px;    
+  }
+  
+  #hamburger span {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+  }
+  
+  #hamburger span:nth-of-type(1){
+    top: 10px;
+  }
+  
+  #hamburger span:nth-of-type(2){
+    top: 20px;
+  }
+
+  #hamburger span:nth-of-type(3){
+    top: 30px;
+  }
+
+  .menu-nav {
+    display: none;
+  }
+
+  .eye-catch-title {
+    font-size: 60px;
+    text-align: center;
+    width: 80%;
+    padding-top: 320px;
+    margin: 0 auto;
+  }
+
+  .news {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;  
+  }
+
+  #about {
+  position: relative;
+  width: 100%;
+  height: 455px;
+  padding: 40px 0;
+}
+
+ .about-img {
+  position: absolute;
+  top: unset;
+  bottom:  -40px;
+  width: 40%;
+  height: auto;
+}
+
+.about-contents {
+  position: initial;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-contents h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.about-contents p {
+  line-height: 26px;
+}
+
+
+.about-contents h2,
+.about-contents p {
+  margin-bottom: 30px;
+}
+
+.about-btn {
+  width: 140px;
+  height: 35px;
+}
+
+#service {
+  width: 100%;
+  margin: 50px auto;
+}
+
+
+.service-contents {
+  display: block;
+  position: initial;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contents2{
+  padding-bottom: 60px;
+}
+
+.service-img {
+  height: 250px;
+  width: 100%;
+}
+
+.service-text {
+  position: unset;
+  width: 100%;
+  height: 300px;
+}
+
+.text {
+  width: 80%;
+  padding: 20px 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.service-text p {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+
+.service-btn {
+  width: 140px;
+  height: 40px;
+  position: absolute;
+  right: 0;  
+}
+
+#information {
+  display: block;
+}
+
+.info-img {
+  width: 100%;
+}
+
+.english-title {
+  font-size: 40px;
+}
+
+#FAQ {
+  width: 75%;
+  margin: 0 auto;
+  background-color: black;
+  color: #fff;
+  padding: 50px 40px;  
+}
+
+#FAQ{
+  margin: 50px auto;
+}
+
+.faq-center {
+  width: auto;
+}
+
+#contact {
+  height: auto;
+}
+
+.contact-contents {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0 ;
+}
+
+
+.sub-message {
+  letter-spacing: 2px;
+  line-height: 16px;
+}
+
+
+.footer menu-nav {
+  display: none;
+}
+
+#footer .logo {
+  display: block;
+  margin: 0 auto;
+}
+
+}
